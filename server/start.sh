@@ -1,8 +1,2 @@
 #!/bin/bash
-
-# Cargar variables del archivo .env
-if [ -f .env ]; then
-  export $(grep -v '^#' .env | xargs)
-fi
-
-java -Xms${MIN}M -Xmx${MAX}M -jar server.jar
+java -Xms1000M -Xmx5000M -jar server.jar
